@@ -1,0 +1,76 @@
+.elegant-showy-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 31px;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about_container {
+  min-height: 85vh;
+}
+
+.card_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card:hover {
+  border-color: rgb(13, 110, 253);
+  box-shadow: 0px 0px 8px 2px rgb(13, 110, 253);
+}
+
+.card {
+  width: 20rem;
+  height: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  flex: 1;
+  object-fit: cover;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-button {
+  align-self: flex-end;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
+
+.animated-heading {
+  font-family: 'Open Sans', sans-serif; /* Custom font */
+  color: #333;
+  opacity: 0; /* Initial opacity is set to 0 */
+  animation: fadeIn 1.5s forwards; /* "forwards" keeps the final state of the animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

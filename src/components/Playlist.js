@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Data from './data';
 
-// import './Profile.css'; // Import the CSS file 
+import './Profile.css'; // Import the CSS file 
 
 const Playlist = () => {
   return (
@@ -16,7 +16,7 @@ const Playlist = () => {
             <Card.Body>
               <Card.Title>{el.projectName}</Card.Title>
               <p>{el.desc}</p>
-              <Button variant="primary" className="btn" href={el.demo} target="_blank">Click here!</Button>
+              <Button variant="primary" className="card-button" href={el.demo} target="_blank">Click here!</Button>
             </Card.Body>
           </Card>
         ))}

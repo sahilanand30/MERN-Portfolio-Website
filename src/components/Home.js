@@ -2,6 +2,7 @@ import React from 'react';
 import "./Home.css";
 import Button from 'react-bootstrap/Button';
 import Typewriter from "typewriter-effect";
+import logo from "./logo.jpg";
 
 const Home = () => {
   return (
@@ -25,12 +26,12 @@ const Home = () => {
             </div>
           </div>
           <div className="right_div">
-            <img src="undraw_Coding_re_iv62.jpg" alt="picture" />
+          <img src={logo} alt="picture" /> 
           </div>
         </div>
       </div>
     </>
-  )
+  ) 
 }
 
 export default Home;
